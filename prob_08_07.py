@@ -49,7 +49,7 @@ p1.show()
 
 # try different values of m
 p2 = plt.figure(2)
-for m in [0.25,0.5,1,2,4]:
+for m in 0.4536*np.array([18,24,32,42]):
     const = (rho*C*np.pi*R**2)/(2.0*m)
     r = np.array([0.0,0.0,v0*np.cos(theta),v0*np.sin(theta)],float)
     xpoints = []
