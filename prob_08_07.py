@@ -9,7 +9,7 @@ rho   = 0.20	# kg m^-3
 C     = 0.47	# unitless
 R     = 0.08    # m
 h     = 0.001   # seconds
-theta = 30.0*(np.pi/180) # radians
+theta = 45.0*(np.pi/180) # radians
 v0    = 100.0	# m s^-1
 const = (rho*C*np.pi*R**2)/(2.0*m)
 
