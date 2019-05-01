@@ -65,12 +65,12 @@ for m in 0.4536*np.array([18,24,32,42]):
         xpoints.append(r[0])
         ypoints.append(r[1])
 
-    plt.plot(xpoints,ypoints,label='m = '+str(m)+' kg')
+    plt.plot(np.array(xpoints)/1000,np.array(ypoints)/1000,label='m = '+str(m)+' kg')
     
-    print('Max Horizontal distance (' + str(m) + ' kg): ' + str(xpoints[-1]) + ' m')
-    print('Max Vertical distance (' + str(m) + ' kg): ' + str(max(ypoints)) + ' m')
+    print('Max Horizontal distance (' + str(m) + ' kg): ' + str(xpoints[-1]/1000) + ' km')
+    print('Max Vertical distance (' + str(m) + ' kg): ' + str(max(ypoints)/1000) + ' km')
 
-plt.xlabel("x [m]")
-plt.ylabel('y [m]')
+plt.xlabel("x [km]")
+plt.ylabel('y [km]')
 plt.legend()
 p2.show()
