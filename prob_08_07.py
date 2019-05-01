@@ -67,8 +67,8 @@ for m in [0.25,0.5,1,2,4]:
 
     plt.plot(xpoints,ypoints,label='m = '+str(m)+' kg')
     
-    print 'Max Horizontal distance (' + str(m) + ' kg): ', str(xpoints[-1]) + ' m'
-    print 'Max Vertical distance (' + str(m) + ' kg): ' + str(max(ypoints)) + ' m'
+    print('Max Horizontal distance (' + str(m) + ' kg): ' + str(xpoints[-1]) + ' m')
+    print('Max Vertical distance (' + str(m) + ' kg): ' + str(max(ypoints)) + ' m')
 
 plt.xlabel("x [m]")
 plt.ylabel('y [m]')
