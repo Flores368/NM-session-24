@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # constants
-g     = 9.81	# m s^-2
+g     = 3.71	# m s^-2
 m     = 1.0	# kg
-rho   = 1.22	# kg m^-3
+rho   = 0.20	# kg m^-3
 C     = 0.47	# unitless
 R     = 0.08    # m
 h     = 0.001   # seconds
