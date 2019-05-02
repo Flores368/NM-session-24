@@ -9,8 +9,8 @@ rho   = 0.20	# kg m^-3
 C     = 0.47	# unitless
 R     = 0.08    # m
 h     = 0.001   # seconds
-theta = 45.0*(np.pi/180) # radians
-v0    = 2000.0	# m s^-1
+theta = 30.0*(np.pi/180) # radians
+v0    = 100.0	# m s^-1
 const = (rho*C*np.pi*R**2)/(2.0*m)
 
 # define the equations of motion
@@ -49,7 +49,7 @@ p1.show()
 
 # try different values of m
 p2 = plt.figure(2)
-for m in 45.36*np.array([9,12,16,21]):
+for m in np.array([0.25,0.5,1,2,4]):
     const = (rho*C*np.pi*R**2)/(2.0*m)
     r = np.array([0.0,0.0,v0*np.cos(theta),v0*np.sin(theta)],float)
     xpoints = []
